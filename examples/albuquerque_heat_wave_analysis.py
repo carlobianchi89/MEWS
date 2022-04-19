@@ -300,7 +300,7 @@ def run_and_post_process_ep(tup):
     only_post_process,
     print_progress) = tup
     
-    idf_name = os.path.basename(idf)
+    idf_name = os.path.basename(idf).replace('.idf', '')
     list_df_single_model = []
     os.chdir(os.path.join(main_path,name_main_folder))
     if not os.path.exists(os.path.join(main_path,name_main_folder,idf_name)):
