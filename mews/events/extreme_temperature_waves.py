@@ -1,3 +1,4 @@
+
 # -*- coding: utf-8 -*-
 """
 Created on Thu Oct 14 09:59:38 2021
@@ -472,7 +473,7 @@ class ExtremeTemperatureWaves(Extremes):
         
     
         
-        feb_28_day = pd.Timestamp(2020,2,28).day_of_year
+        feb_28_day = pd.Timestamp(2020,2,28).dayofyear
     
         df_list = []
     
@@ -492,8 +493,8 @@ class ExtremeTemperatureWaves(Extremes):
             first_date = df_daily.index[b_ind]
             end_date = df_daily.index[e_ind]
             
-            first_day = first_date.day_of_year[0]-1
-            end_day = end_date.day_of_year[0]-1
+            first_day = first_date.dayofyear[0]-1
+            end_day = end_date.dayofyear[0]-1
     
             
             if first_date.is_leap_year and (first_day <= feb_28_day and end_day > feb_28_day):
