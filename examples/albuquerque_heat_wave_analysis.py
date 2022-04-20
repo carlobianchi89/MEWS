@@ -87,7 +87,7 @@ class Input():
     
     building_area = 4982.19 #m2
     
-    plot_locations = r"/Users/cbianchi/Documents/GitHub/MEWS/examples/mews_results/plots"
+    plot_locations = r"/Users/cbianchi/Documents/GitHub/MEWS/examples/ep_results/plots"
     
     #mews
     station = os.path.join("example_data","USW00023050.csv")
@@ -613,7 +613,7 @@ class FinalPostProcess(Input):
                 
 
 if __name__ == "__main__":
-     run_local = True
+     run_local = False
      if run_local:
          scenarios = ["SSP5-8.5"]
          start_years = [2025]
