@@ -74,7 +74,7 @@ class Input():
     rc('font', **font)
     
     # provide a path to energy plus' latest executable.
-    ep_path = r"C:\Users\dlvilla\Documents\BuildingEnergyModeling\EnergyPlusV9-6-0"
+    ep_path = r"/Applications/EnergyPlus-9-6-0"
     post_process_path = os.path.join(ep_path,"PostProcess",'ReadVarsESO.exe')
     # much faster to run parallel but sometimes there are platform or changes
     # that cause this to fail.
@@ -87,7 +87,7 @@ class Input():
     
     building_area = 4982.19 #m2
     
-    plot_locations = r"C:\Users\dlvilla\Documents\BuildingEnergyModeling\MEWS\mews_temp\SimbuildPaper\from_python\plots"
+    plot_locations = r"/Users/cbianchi/Documents/GitHub/MEWS/examples/mews_results/plots"
     
     #mews
     station = os.path.join("example_data","USW00023050.csv")
