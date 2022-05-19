@@ -357,6 +357,11 @@ class ExtremeTemperatureWaves(Extremes):
         
         """
         df_temp = []
+
+        print('----------' + self.daily_url)
+        print(station)
+
+
         for url,isdaily in zip([self.daily_url,self.norms_url],[True,False]):
     
             if station[-4:] == ".csv":
@@ -435,6 +440,8 @@ class ExtremeTemperatureWaves(Extremes):
         df_norms = df_temp[1]
         
         self.NOAA_data = self._extend_boundary_df_to_daily_range(df_norms,df_daily)
+        print('===============================')
+        print(self.NOAA_data)
     
     def _check_NOAA_url_validity(self):
         def is_valid(url):
